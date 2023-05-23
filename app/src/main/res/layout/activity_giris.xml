@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/girisConstraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+
+    <TextView
+        android:id="@+id/girisGunoYazi"
+        android:layout_width="357dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/yazi6"
+        android:gravity="center"
+        android:text="GÜNO"
+        android:textColor="@color/white"
+        android:textSize="95dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/girisEposta"
+        android:layout_width="270dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/giriskullaniciadisifretext"
+        android:drawableLeft="@drawable/kayitolmaillogo"
+        android:ems="10"
+        android:hint="E-posta"
+        android:inputType="textPersonName"
+        android:padding="13dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/girisGunoYazi" />
+
+    <EditText
+        android:id="@+id/girisParola"
+        android:layout_width="270dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/giriskullaniciadisifretext"
+        android:drawableLeft="@drawable/textkilit"
+        android:ems="10"
+        android:hint="Parola"
+        android:inputType="textPersonName"
+        android:padding="13dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/girisEposta" />
+
+    <Button
+        android:id="@+id/btngirisGirisYap"
+        android:layout_width="135dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/girisbutonarkaplan"
+        android:text="Giriş Yap"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/girisParola"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/girisParola"
+        app:layout_constraintTop_toBottomOf="@+id/girisParola" />
+
+    <Button
+        android:id="@+id/btngiriskayitol"
+        android:layout_width="135dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/girisbutonarkaplan"
+        android:text="Kayıt Ol"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/girisParola"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/girisParola"
+        app:layout_constraintTop_toBottomOf="@+id/girisParola" />
+
+    <Button
+        android:id="@+id/btngirisSifremiUnuttum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:background="@android:color/transparent"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:outlineProvider="none"
+        android:text="Şifremi Unuttum"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/girisParola" />
+
+    <CheckBox
+        android:id="@+id/chbEpostaHatirla"
+        android:layout_width="165dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="328dp"
+        android:buttonTint="@color/white"
+        android:text="E Postamı Hatırla"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.256"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
