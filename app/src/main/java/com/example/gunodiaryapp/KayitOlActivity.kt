@@ -24,7 +24,7 @@ class KayitOlActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.kayitolekrani)
+        setContentView(R.layout.activity_kayitol)
         val myTextView = findViewById<TextView>(R.id.kayitolGunoYazi)//textyazımızı buluyor
         val kullaniciadiYazi = findViewById<EditText>(R.id.kayitolAdSoyad)//kullanıcı textini buluyor
         val epostaYazi = findViewById<EditText>(R.id.sifremiunuttumEposta)// girişdeki parola edittextini buluyoruz
@@ -90,19 +90,19 @@ class KayitOlActivity : AppCompatActivity() {
                         if (currentUser != null) {
                             var currentUserDb = databaseReference?.child(currentUser.uid)
                             currentUserDb?.child("AdiSoyadi")?.setValue(kullaniciadi)
-                            Toast.makeText(this@KayitOlEkrani,"Kayıt Başarılı",Toast.LENGTH_LONG).show()
+                            Toast.makeText(this,"Kayıt Başarılı",Toast.LENGTH_LONG).show()
                             val intent = Intent(this, GirisActivity::class.java)
                             startActivity(intent)
                             finish()
                         } else {
-                            Toast.makeText(this@KayitOlEkrani,"Kayıt Hatalı",Toast.LENGTH_LONG).show()
+                            Toast.makeText(this,"Kayıt Hatalı",Toast.LENGTH_LONG).show()
                         }
                     }//
                     else {
                         when (task.exception) {
-                            is FirebaseAuthInvalidCredentialsException -> Toast.makeText(this@KayitOlEkrani,"Lütfen geçerli bir mail adresi giriniz",Toast.LENGTH_LONG).show()
-                            is FirebaseAuthUserCollisionException -> Toast.makeText(this@KayitOlEkrani,"Bu e-posta adresi zaten kayıtlı",Toast.LENGTH_LONG).show()
-                            else -> Toast.makeText(this@KayitOlEkrani,"Kayıt Hatalı: ${task.exception?.message}",Toast.LENGTH_LONG).show()
+                            is FirebaseAuthInvalidCredentialsException -> Toast.makeText(this,"Lütfen geçerli bir mail adresi giriniz",Toast.LENGTH_LONG).show()
+                            is FirebaseAuthUserCollisionException -> Toast.makeText(this,"Bu e-posta adresi zaten kayıtlı",Toast.LENGTH_LONG).show()
+                            else -> Toast.makeText(this,"Kayıt Hatalı: ${task.exception?.message}",Toast.LENGTH_LONG).show()
                         }
                     }
                 }
