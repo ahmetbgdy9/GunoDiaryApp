@@ -7,15 +7,17 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="gunlukbuton">#208958</color>
     <color name="constraintgirisrenk">#FFFDD0</color>
     <color name="sifregirisrenk">#272727</color>
     <color name="sifregirisgonderbutonrenk">#5F3EB1</color>
     <color name="Pbutonbg">#161932</color>
     <color name="Pbutonbg2">#F87070</color>
+    <color name="temaRengi">#25273D</color>
+    <color name="secondary">#F85467</color>
     <color name="primary_light">#4C6068</color>
     <color name="primary">#2D454E</color>
     <color name="primary_dark">#17313B</color>
     <color name="secondary_light">#F97685</color>
-    <color name="secondary">#F85467</color>
 
 </resources>

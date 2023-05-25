@@ -13,7 +13,7 @@
         android:theme="@style/Theme.GunoDiaryApp"
         tools:targetApi="31">
         <activity
-            android:name=".HosgeldinizActivity"
+            android:name=".Takvim"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,7 +29,35 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".SifremiUnuttum"
+            android:name=".GorevListesi"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".GorevlerimDetay"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".HosgeldinizActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".GorevListesiYeniGorevEkle"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".GunlukActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -37,6 +65,41 @@
         </activity>
         <activity
             android:name=".KayitOlActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Not_Ekle"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Notlarim"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Pomodoro"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".PomodoroAyar"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".SifremiUnuttum"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

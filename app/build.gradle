@@ -11,6 +11,7 @@ android {
 
     namespace 'com.example.gunodiaryapp'
     compileSdk 33
+    compileSdkPreview "UpsideDownCake"
 
     defaultConfig {
         applicationId "com.example.gunodiaryapp"
@@ -38,9 +39,9 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-  //  buildFeatures{
-    //    viewBinding  = true
-    //}
+    buildFeatures{
+        viewBinding  = true
+    }
 
 }
 
