@@ -51,32 +51,6 @@ class AnaMenu : AppCompatActivity() {
             override fun onCancelled(error: DatabaseError) {
             }
         })
-        // takvim sayfasına gidiyoruz
-        val takvimButon = findViewById<ImageButton>(R.id.btnAnaMenuTakvim)
-        takvimButon.setOnClickListener {
-            val intent = Intent(applicationContext, Takvim::class.java)
-            startActivity(intent)
-        }
-        val gunlukButon = findViewById<ImageButton>(R.id.btnAnaMenuGunlugum)
-        gunlukButon.setOnClickListener {
-            val intent = Intent(applicationContext,Gunlugum::class.java)
-            startActivity(intent)
-        }
-        val gorevButon = findViewById<ImageButton>(R.id.btnAnaMenuGorevListesi)
-        gorevButon.setOnClickListener {
-            val intent = Intent(applicationContext,GorevListesi::class.java)
-            startActivity(intent)
-        }
-        val pomodoroButon = findViewById<ImageButton>(R.id.btnAnaMenuPomodoro)
-        pomodoroButon.setOnClickListener {
-            val intent = Intent(applicationContext,Pomodoro::class.java)
-            startActivity(intent)
-        }
-        val kilitButon = findViewById<ImageButton>(R.id.btnAnaMenuGorevAgaci)
-        kilitButon.setOnClickListener{
-            val intent = Intent(applicationContext,KilitSayfasi::class.java)
-            startActivity(intent)
-        }
 
 
     }

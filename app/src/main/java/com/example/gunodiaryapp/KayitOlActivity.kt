@@ -40,21 +40,18 @@ class KayitOlActivity : AppCompatActivity() {
         parolaYaziOnay.startAnimation(myAnimation)
         kayitolbuton.startAnimation(myAnimation)
 
-
-
-
         auth = FirebaseAuth.getInstance()
         database = FirebaseDatabase.getInstance()
         databaseReference = database?.reference!!.child("Kullanici")
 
         //kaydet butonuyla kaydetme adimlari
-        val kaydetButton = findViewById<Button>(R.id.btnkayitolKaydet)
-        kaydetButton.setOnClickListener {
+
+        kayitolbuton.setOnClickListener {
             val uyari = Toast.makeText(applicationContext, "Alanları Eksiksiz Doldurun Lütfen", Toast.LENGTH_SHORT)
 
-            var kullaniciadi = kullaniciadiYazi.text.toString()
-            var eposta = epostaYazi.text.toString()
-            var parola = parolaYazi.text.toString()
+            val kullaniciadi = kullaniciadiYazi.text.toString()
+            val eposta = epostaYazi.text.toString()
+            val parola = parolaYazi.text.toString()
             if (kullaniciadiYazi.text.toString().isEmpty()){
                 uyari.show()
                 return@setOnClickListener
@@ -86,9 +83,9 @@ class KayitOlActivity : AppCompatActivity() {
                 .addOnCompleteListener(this) {  task ->
                     if (task.isSuccessful) {
                         // Kullanıcı başarıyla kaydedildi, veritabanına kaydedelim
-                        var currentUser = auth.currentUser
+                        val currentUser = auth.currentUser
                         if (currentUser != null) {
-                            var currentUserDb = databaseReference?.child(currentUser.uid)
+                            val currentUserDb = databaseReference?.child(currentUser.uid)
                             currentUserDb?.child("AdiSoyadi")?.setValue(kullaniciadi)
                             Toast.makeText(this,"Kayıt Başarılı",Toast.LENGTH_LONG).show()
                             val intent = Intent(this, GirisActivity::class.java)

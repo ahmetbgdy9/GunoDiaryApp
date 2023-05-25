@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gunlukarkaplanv2"
+    tools:context=".GunlukActivity">
+
+    <TextView
+        android:id="@+id/gunlukTarih"
+        android:layout_width="92dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="36dp"
+        android:fontFamily="@font/tarih"
+        android:text="00/00/0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/gunlukAdSoyad"
+        android:layout_width="110dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="84dp"
+        android:fontFamily="@font/tarih"
+        android:text="Ad - Soyad"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/gunlugumYazi"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="43dp"
+
+        android:fontFamily="@font/elyazisi"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/gunlukKaydet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/gunlukSolGecis"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="34dp"
+        android:background="@drawable/gunkuksolgecis"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gunlukKaydet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gunlugumYazi"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/gunlukKaydet"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="34dp"
+        android:background="@drawable/gunlukkaydet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gunlugumYazi" />
+
+    <Button
+        android:id="@+id/gunlukSagGecis"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="34dp"
+        android:background="@drawable/gunluksaggecis"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gunlukKaydet"
+        app:layout_constraintTop_toBottomOf="@+id/gunlugumYazi" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

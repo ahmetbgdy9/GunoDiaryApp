@@ -8,7 +8,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
-    tools:context=".KayitOlEkrani">
+    tools:context=".KayitOlActivity">
 
     <EditText
         android:id="@+id/sifremiunuttumEposta"
@@ -27,7 +27,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/kayitolAdSoyad" />
+        app:layout_constraintTop_toBottomOf="@+id/kayitolAdSoyad"
+        tools:ignore="TextSizeCheck" />
 
     <EditText
         android:id="@+id/kayitolParola"
@@ -46,7 +47,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sifremiunuttumEposta" />
+        app:layout_constraintTop_toBottomOf="@+id/sifremiunuttumEposta"
+        tools:ignore="TextSizeCheck" />
 
     <TextView
         android:id="@+id/kayitolGunoYazi"
@@ -80,7 +82,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/kayitolGunoYazi" />
+        app:layout_constraintTop_toBottomOf="@+id/kayitolGunoYazi"
+        tools:ignore="TextSizeCheck" />
 
     <EditText
         android:id="@+id/kayitolParolaOnay"
@@ -99,7 +102,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/kayitolParola" />
+        app:layout_constraintTop_toBottomOf="@+id/kayitolParola"
+        tools:ignore="TextSizeCheck" />
 
     <Button
         android:id="@+id/btnkayitolKaydet"
@@ -113,6 +117,7 @@
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="@+id/kayitolParolaOnay"
         app:layout_constraintTop_toBottomOf="@+id/kayitolParolaOnay"
-        app:layout_constraintVertical_bias="0.227" />
+        app:layout_constraintVertical_bias="0.227"
+        tools:ignore="TextSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
