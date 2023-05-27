@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="25dp"
+    android:background="@color/constraintgirisrenk"
+    >
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="117dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="279dp"
+        android:layout_marginBottom="15dp"
+        android:text="Özelleştir"
+        android:textColor="#777D7D"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/temabtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hesabsilbtn" />
+
+    <Button
+        android:id="@+id/sifredegistirbtn"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="260dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginBottom="5dp"
+        android:drawableStart="@drawable/resetpassword2"
+        android:text="Şifre Değiştir"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/pinbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hesabimbtn" />
+
+    <Button
+        android:id="@+id/hesabsilbtn"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="260dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginBottom="10dp"
+        android:drawableStart="@drawable/deleteuser2"
+        android:text="Hesabımı Sil"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pinbtn" />
+
+    <Button
+        android:id="@+id/pinbtn"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="260dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="5dp"
+        android:drawableStart="@drawable/password1"
+        android:text="Pin"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/hesabsilbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sifredegistirbtn" />
+
+    <Switch
+        android:id="@+id/bildirimbtn"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="260dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="199dp"
+        android:drawableStart="@drawable/notification1"
+        android:text="Bildirim"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/temabtn" />
+
+    <Button
+        android:id="@+id/ayarllarcıkbtn"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="130dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+
+        android:layout_marginEnd="265dp"
+        android:layout_marginBottom="15dp"
+        android:drawableStart="@drawable/arrow_back"
+        android:text="Ayarlar"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="117dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="278dp"
+        android:layout_marginBottom="20dp"
+        android:text="Hesap Ayarları"
+        android:textColor="#777D7D"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/hesabimbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ayarllarcıkbtn" />
+
+    <Switch
+        android:id="@+id/temabtn"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="260dp"
+        android:layout_height="55dp"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginBottom="1dp"
+        android:drawableStart="@drawable/themes1"
+        android:text="Tema"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/bildirimbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <Button
+        android:id="@+id/hesabimbtn"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="260dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginBottom="5dp"
+        android:drawableStart="@drawable/man1"
+        android:text="Hesabım"
+        android:textColor="#000000"
+        android:textSize="20dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/sifredegistirbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

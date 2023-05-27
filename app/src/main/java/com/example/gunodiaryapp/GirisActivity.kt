@@ -18,9 +18,6 @@ class GirisActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
         //ANİMASYONLAR
-        val anasayfaGunoYazi = findViewById<TextView>(R.id.girisGunoYazi)//textyazımızı buluyor
-        val yukariAsagi = AnimationUtils.loadAnimation(this, R.anim.yukaridanasagi)//yukarıdan asagi kaydırır
-        anasayfaGunoYazi.startAnimation(yukariAsagi)//animasyonu başlatır
 
         val girisEposta = findViewById<EditText>(R.id.girisEposta)//kullanıcı textini buluyor
         val soldanSaga = AnimationUtils.loadAnimation(this, R.anim.soldansaga)//kullanici textini kaydıran animasyonu yüklüyor

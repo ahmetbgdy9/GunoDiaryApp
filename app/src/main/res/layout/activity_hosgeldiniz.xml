@@ -4,35 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
+    android:background="@drawable/hosgeldiniz"
     tools:context=".HosgeldinizActivity">
+
 
     <TextView
         android:id="@+id/yuklemeHosgeldin"
 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_width="301dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="479dp"
+        android:layout_marginBottom="140dp"
         android:fontFamily="@font/yazi2"
         android:gravity="center"
         android:text="HOŞGELDİN"
         android:textColor="@color/white"
-        android:textSize="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/yuklemeGuno" />
-
-    <TextView
-        android:id="@+id/yuklemeGuno"
-        android:layout_width="385dp"
-        android:layout_height="148dp"
-        android:layout_marginTop="176dp"
-        android:fontFamily="@font/yazi5"
-        android:gravity="center"
-        android:text="GÜNO"
-        android:textColor="@color/white"
-
-        android:textSize="130dp"
+        android:textSize="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/yuklemeDokun"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -41,8 +29,13 @@
         android:id="@+id/yuklemeFrame"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginBottom="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
     </FrameLayout>
 
@@ -56,6 +49,7 @@
         android:text="DOKUN"
         android:textColor="@color/white"
         android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/yuklemeFrame"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
