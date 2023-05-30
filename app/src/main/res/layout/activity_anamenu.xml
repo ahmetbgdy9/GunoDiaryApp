@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/anamenuarkaplan"
+    android:background="#323042"
     tools:context=".AnaMenu">
 
     <TextView
@@ -18,35 +18,35 @@
         android:text="Ad - Soyad"
         android:textSize="16dp"
         android:textStyle="bold"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.054"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/ayarlar"
+    <ImageButton
+        android:id="@+id/btnAnaMenuAyarlar"
         android:layout_width="126dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="48dp"
-        android:fontFamily="@font/yazi3"
-        android:gravity="center"
-        android:text="Ayarlarım"
-        android:textColor="@color/black"
-        android:textSize="25dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="8dp"
+        android:background="#00000000"
+        android:contentDescription="Ayarlar"
+        android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.768"
+        app:layout_constraintHorizontal_bias="0.817"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAnaMenuPomodoro" />
+        app:layout_constraintTop_toBottomOf="@+id/ayarlar"
+        app:srcCompat="@drawable/ayarlar" />
 
     <TextView
         android:id="@+id/agacim"
         android:layout_width="126dp"
         android:layout_height="33dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="44dp"
         android:fontFamily="@font/yazi3"
         android:gravity="center"
         android:text="Ağacım"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.263"
@@ -54,56 +54,25 @@
         app:layout_constraintTop_toBottomOf="@+id/btnAnaMenuGunlugum" />
 
     <TextView
-        android:id="@+id/pomodorom"
+        android:id="@+id/ayarlar"
         android:layout_width="126dp"
         android:layout_height="33dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="44dp"
         android:fontFamily="@font/yazi3"
         android:gravity="center"
-        android:text="Pomodorom"
-        android:textColor="@color/black"
+        android:text="Ayarlarım"
+        android:textColor="@color/white"
         android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.817"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAnaMenuGorevListesi" />
-
-    <TextView
-        android:id="@+id/gunlugum"
-        android:layout_width="126dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="48dp"
-        android:fontFamily="@font/yazi3"
-        android:gravity="center"
-        android:text="Günlüğüm"
-        android:textColor="@color/black"
-        android:textSize="25dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.263"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAnaMenuTakvim" />
-
-    <TextView
-        android:id="@+id/gorevListesi"
-        android:layout_width="126dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="25dp"
-        android:fontFamily="@font/yazi3"
-        android:gravity="center"
-        android:text="Görevlerim"
-        android:textColor="@color/black"
-        android:textSize="25dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.896"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tarih" />
+        app:layout_constraintTop_toBottomOf="@+id/btnAnaMenuPomodoro" />
 
     <ImageButton
         android:id="@+id/btnAnaMenuPomodoro"
         android:layout_width="126dp"
         android:layout_height="88dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="52dp"
         android:background="#00000000"
         android:contentDescription="Pomodoro"
@@ -113,66 +82,10 @@
         app:srcCompat="@drawable/pomodoro" />
 
     <ImageButton
-        android:id="@+id/btnAnaMenuGorevAgaci"
-        android:layout_width="126dp"
-        android:layout_height="88dp"
-        android:layout_marginTop="5dp"
-        android:background="#00000000"
-        android:contentDescription="Görev Ağacım"
-        android:scaleType="fitCenter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.263"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/agacim"
-        app:srcCompat="@drawable/gorevagaci" />
-
-    <ImageButton
-        android:id="@+id/btnAnaMenuAyarlar"
-        android:layout_width="126dp"
-        android:layout_height="88dp"
-        android:layout_marginTop="5dp"
-        android:background="#00000000"
-        android:contentDescription="Ayarlar"
-        android:scaleType="fitCenter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.768"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ayarlar"
-        app:srcCompat="@drawable/ayarlar" />
-
-    <ImageButton
-        android:id="@+id/btnAnaMenuGunlugum"
-        android:layout_width="126dp"
-        android:layout_height="88dp"
-        android:layout_marginTop="5dp"
-        android:background="#00000000"
-        android:contentDescription="Günlüğüm"
-        android:scaleType="fitCenter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.263"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gunlugum"
-        app:srcCompat="@drawable/gunlugum" />
-
-    <ImageButton
-        android:id="@+id/btnAnaMenuTakvim"
-        android:layout_width="126dp"
-        android:layout_height="88dp"
-        android:layout_marginTop="5dp"
-        android:background="#00000000"
-        android:contentDescription="Takvimim"
-        android:scaleType="fitCenter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.263"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/takvimim"
-        app:srcCompat="@drawable/takvim" />
-
-    <ImageButton
         android:id="@+id/btnAnaMenuGorevListesi"
         android:layout_width="126dp"
         android:layout_height="88dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="52dp"
         android:background="#00000000"
         android:contentDescription="Görev Listesi"
@@ -182,20 +95,108 @@
         app:srcCompat="@drawable/gorevler" />
 
     <TextView
+        android:id="@+id/gunlugum"
+        android:layout_width="126dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/yazi3"
+        android:gravity="center"
+        android:text="Günlüğüm"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.277"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAnaMenuTakvim" />
+
+    <TextView
         android:id="@+id/takvimim"
         android:layout_width="126dp"
         android:layout_height="0dp"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="120dp"
         android:fontFamily="@font/yazi3"
         android:gravity="center"
         android:text="Takvimim"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintHorizontal_bias="0.207"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/anaMenuAdSoyad" />
+
+    <TextView
+        android:id="@+id/pomodorom"
+        android:layout_width="126dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/yazi3"
+        android:gravity="center"
+        android:text="Pomodorom"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.831"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAnaMenuGorevListesi" />
+
+    <ImageButton
+        android:id="@+id/btnAnaMenuTakvim"
+        android:layout_width="126dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="8dp"
+        android:background="#00000000"
+        android:contentDescription="Takvimim"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.277"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/takvimim"
+        app:srcCompat="@drawable/takvim" />
+
+    <ImageButton
+        android:id="@+id/btnAnaMenuGunlugum"
+        android:layout_width="126dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="16dp"
+        android:background="#00000000"
+        android:contentDescription="Günlüğüm"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.277"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gunlugum"
+        app:srcCompat="@drawable/gunlugum" />
+
+    <TextView
+        android:id="@+id/gorevListesi"
+        android:layout_width="126dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="@font/yazi3"
+        android:gravity="center"
+        android:text="Görevlerim"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.911"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tarih" />
+
+    <ImageButton
+        android:id="@+id/btnAnaMenuGorevAgaci"
+        android:layout_width="126dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="8dp"
+        android:background="#00000000"
+        android:contentDescription="Görev Ağacım"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/agacim"
+        app:srcCompat="@drawable/gorevagaci" />
 
     <TextView
         android:id="@+id/tarih"
@@ -206,6 +207,7 @@
         android:layout_marginBottom="24dp"
         android:fontFamily="@font/tarih"
         android:text="00/00/0000"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/gorevListesi"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.972"
@@ -214,14 +216,15 @@
 
     <TextView
         android:id="@+id/saglikligunler"
-        android:layout_width="280dp"
-        android:layout_height="33dp"
+        android:layout_width="279dp"
+        android:layout_height="45dp"
         android:layout_marginStart="65dp"
         android:layout_marginEnd="66dp"
         android:layout_marginBottom="25dp"
-        android:fontFamily="@font/saglikligunler"
+        android:fontFamily="@font/yazi2"
         android:gravity="center"
         android:text="Sağlıklı Günler"
+        android:textColor="@color/white"
         android:textSize="33dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

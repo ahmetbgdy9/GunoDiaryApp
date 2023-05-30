@@ -25,7 +25,7 @@ class KayitOlActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_kayitol)
-        val myTextView = findViewById<TextView>(R.id.kayitolGunoYazi)//textyazımızı buluyor
+        val myTextView = findViewById<TextView>(R.id.kayitolGunoyazi)//textyazımızı buluyor
         val kullaniciadiYazi = findViewById<EditText>(R.id.kayitolAdSoyad)//kullanıcı textini buluyor
         val epostaYazi = findViewById<EditText>(R.id.sifremiunuttumEposta)// girişdeki parola edittextini buluyoruz
         val parolaYazi = findViewById<EditText>(R.id.kayitolParola)//girisdeki giriş butonunu buluyoruz

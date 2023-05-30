@@ -38,11 +38,11 @@
         android:layout_marginStart="43dp"
         android:layout_marginTop="120dp"
         android:layout_marginEnd="43dp"
-
         android:fontFamily="@font/elyazisi"
         android:gravity="start|top"
         android:inputType="textMultiLine"
         android:textSize="15dp"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/gunlukKaydet"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

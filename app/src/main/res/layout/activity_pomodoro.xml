@@ -117,6 +117,7 @@
         android:layout_marginTop="25dp"
         android:layout_marginEnd="47dp"
         android:layout_marginBottom="49dp"
+        android:background="@drawable/background_transparent"
         android:fontFamily="@font/montserrat"
         android:letterSpacing="0.4"
         android:text="BAŞLA"

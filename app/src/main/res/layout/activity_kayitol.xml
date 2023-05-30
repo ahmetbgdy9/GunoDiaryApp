@@ -7,8 +7,44 @@
     android:id="@+id/kayitolConstraint"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
+    android:background="@drawable/kayitol"
     tools:context=".KayitOlActivity">
+
+
+    <TextView
+        android:id="@+id/kayitolGunoyazi"
+        android:layout_width="295dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="192dp"
+        android:fontFamily="@font/yazi2"
+        android:gravity="center"
+        android:text="GÜNO"
+        android:textColor="@color/white"
+        android:textSize="75dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/kayitolAdSoyad"
+        android:layout_width="270dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="116dp"
+        android:background="@drawable/giriskullaniciadisifretext"
+        android:drawableLeft="@drawable/textkullanici"
+        android:ems="10"
+        android:hint="Ad Soyad"
+        android:inputType="textPersonName"
+        android:padding="13dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kayitolGunoyazi"
+        tools:ignore="TextSizeCheck" />
 
     <EditText
         android:id="@+id/sifremiunuttumEposta"
@@ -31,61 +67,6 @@
         tools:ignore="TextSizeCheck" />
 
     <EditText
-        android:id="@+id/kayitolParola"
-        android:layout_width="270dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="12dp"
-        android:background="@drawable/giriskullaniciadisifretext"
-        android:drawableLeft="@drawable/textkilit"
-        android:ems="10"
-        android:hint="Parola"
-        android:inputType="textPersonName"
-        android:padding="13dp"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black"
-        android:textSize="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sifremiunuttumEposta"
-        tools:ignore="TextSizeCheck" />
-
-    <TextView
-        android:id="@+id/kayitolGunoYazi"
-        android:layout_width="357dp"
-        android:layout_height="149dp"
-        android:layout_marginTop="88dp"
-        android:fontFamily="@font/yazi6"
-        android:gravity="center"
-        android:text="GÜNO"
-        android:textColor="@color/white"
-        android:textSize="95dp"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/kayitolAdSoyad"
-        android:layout_width="270dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/giriskullaniciadisifretext"
-        android:drawableLeft="@drawable/textkullanici"
-        android:ems="10"
-        android:hint="Ad Soyad"
-        android:inputType="textPersonName"
-        android:padding="13dp"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black"
-        android:textSize="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/kayitolGunoYazi"
-        tools:ignore="TextSizeCheck" />
-
-    <EditText
         android:id="@+id/kayitolParolaOnay"
         android:layout_width="270dp"
         android:layout_height="51dp"
@@ -100,24 +81,45 @@
         android:textColorHint="@color/black"
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/kayitolParola"
         tools:ignore="TextSizeCheck" />
 
+    <EditText
+        android:id="@+id/kayitolParola"
+        android:layout_width="270dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/giriskullaniciadisifretext"
+        android:drawableLeft="@drawable/textkilit"
+        android:ems="10"
+        android:hint="Parola"
+        android:inputType="textPersonName"
+        android:padding="13dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sifremiunuttumEposta"
+        tools:ignore="TextSizeCheck" />
+
     <Button
         android:id="@+id/btnkayitolKaydet"
-        android:layout_width="135dp"
-        android:layout_height="51dp"
-        android:background="@drawable/girisbutonarkaplan"
+        android:layout_width="168dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/bgbuton2"
         android:text="Kayıt Ol"
+        android:textColor="@color/white"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/kayitolParolaOnay"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="@+id/kayitolParolaOnay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/kayitolParolaOnay"
-        app:layout_constraintVertical_bias="0.227"
-        tools:ignore="TextSizeCheck" />
+        app:layout_constraintVertical_bias="0.127" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

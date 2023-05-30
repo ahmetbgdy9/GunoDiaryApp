@@ -12,8 +12,7 @@
         android:id="@+id/girisEposta"
         android:layout_width="270dp"
         android:layout_height="51dp"
-        android:layout_marginTop="500dp"
-        android:layout_marginBottom="2dp"
+        android:layout_marginTop="408dp"
         android:background="@drawable/giriskullaniciadisifretext"
         android:drawableLeft="@drawable/kayitolmaillogo"
         android:ems="10"
@@ -23,9 +22,7 @@
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         android:textSize="15dp"
-        app:layout_constraintBottom_toTopOf="@+id/chbEpostaHatirla"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -33,8 +30,6 @@
         android:id="@+id/girisParola"
         android:layout_width="270dp"
         android:layout_height="51dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginBottom="26dp"
         android:background="@drawable/giriskullaniciadisifretext"
         android:drawableLeft="@drawable/textkilit"
         android:ems="10"
@@ -44,25 +39,19 @@
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         android:textSize="15dp"
-        app:layout_constraintBottom_toTopOf="@+id/btngirisGirisYap"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/girisEposta" />
+        app:layout_constraintTop_toBottomOf="@+id/chbEpostaHatirla" />
 
     <Button
         android:id="@+id/btngirisGirisYap"
         android:layout_width="113dp"
         android:layout_height="41dp"
-        android:layout_marginStart="81dp"
-        android:layout_marginEnd="13dp"
-        android:layout_marginBottom="13dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="32dp"
         android:background="#FCDDCC"
         android:text="Giriş Yap"
         android:textSize="15dp"
-        app:layout_constraintBottom_toTopOf="@+id/btngirisSifremiUnuttum"
-        app:layout_constraintEnd_toStartOf="@+id/btngirisSifremiUnuttum"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/girisParola" />
 
@@ -70,16 +59,12 @@
         android:id="@+id/btngiriskayitol"
         android:layout_width="113dp"
         android:layout_height="41dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="79dp"
-        android:layout_marginBottom="13dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="84dp"
         android:background="#FCDDCC"
         android:text="Kayıt Ol"
         android:textSize="15dp"
-        app:layout_constraintBottom_toTopOf="@+id/btngirisSifremiUnuttum"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/btngirisGirisYap"
         app:layout_constraintTop_toBottomOf="@+id/girisParola" />
 
     <Button
@@ -87,7 +72,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
-        android:layout_marginBottom="132dp"
         android:background="@android:color/transparent"
         android:foreground="?android:attr/selectableItemBackground"
         android:outlineProvider="none"
@@ -97,22 +81,35 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/girisParola" />
+        app:layout_constraintTop_toBottomOf="@+id/girisParola"
+        app:layout_constraintVertical_bias="0.026" />
 
     <CheckBox
         android:id="@+id/chbEpostaHatirla"
         android:layout_width="165dp"
         android:layout_height="47dp"
-        android:layout_marginTop="553dp"
-        android:layout_marginBottom="3dp"
         android:buttonTint="@color/white"
         android:text="E Postamı Hatırla"
         android:textColor="#FCDDCC"
-        app:layout_constraintBottom_toTopOf="@+id/girisParola"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.256"
+        app:layout_constraintHorizontal_bias="0.288"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/girisEposta"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="295dp"
+        android:layout_height="92dp"
+        android:fontFamily="@font/yazi2"
+        android:gravity="center"
+        android:text="GÜNO"
+        android:textColor="@color/white"
+        android:textSize="75dp"
+        app:layout_constraintBottom_toTopOf="@+id/girisEposta"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TouchTargetSizeCheck" />
+        app:layout_constraintVertical_bias="0.575" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
