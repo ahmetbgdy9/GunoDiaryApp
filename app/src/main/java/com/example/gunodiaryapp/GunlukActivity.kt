@@ -12,7 +12,6 @@ import java.util.*
 
 class GunlukActivity : AppCompatActivity() {
 
-
     val calendar = Calendar.getInstance()
     val suankiKullaniciID = FirebaseAuth.getInstance().currentUser?.uid
     val databaseReference = FirebaseDatabase.getInstance().reference//database referansımız

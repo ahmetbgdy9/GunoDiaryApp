@@ -1,5 +1,6 @@
 <resources>
-   // <string name="app_name">Güno</string>
+    //
+    <string name="app_name">Güno</string>
     <string name="eposta">E-Posta</string>
     <string name="sifre">Şifre</string>
     <string name="logoaciklama">GunoLogosu</string>
@@ -9,6 +10,6 @@
     <string name="secili_gun_label">Seçili Tarih:</string>
     <string name="onceki_gun">Önceki Gün</string>
     <string name="sonraki_gun">Sonraki Gün</string>
-   <!-- <string name="app_name">Calendar Sample App</string>-->
+    <!-- <string name="app_name">Calendar Sample App</string>-->
     <string name="add_new_item">Yeni öğe ekle</string>
 </resources>

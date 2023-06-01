@@ -23,15 +23,15 @@ class SifremiUnuttum : AppCompatActivity() {
         val anim = AnimationUtils.loadAnimation(this, R.anim.sagdansola)//logoyu kaydıracak yukarıdan asagi animasyonu yüklüyor
         label.startAnimation(anim)//yukarıdan asagı kaydıran animasyon
 
-        val textView = findViewById<TextView>(R.id.sifremiunuttumEposta)//girisdeki giriş butonunu buluyoruz
+        val textView = findViewById<TextView>(R.id.sifreDegisEposta)//girisdeki giriş butonunu buluyoruz
         textView.startAnimation(anim)//asagidan yukarı kaydiran animasyon
 
-        val button1 = findViewById<Button>(R.id.btnkayitolKaydet)//girisdeki giriş butonunu buluyoruz
+        val button1 = findViewById<Button>(R.id.btnPinUygula)//girisdeki giriş butonunu buluyoruz
         button1.startAnimation(anim)//asagidan yukarı kaydiran animasyon
 
 
         button1.setOnClickListener {
-            var emailsifirla = findViewById<TextView>(R.id.sifremiunuttumEposta).text.toString().trim()
+            var emailsifirla = findViewById<TextView>(R.id.sifreDegisEposta).text.toString().trim()
             if(TextUtils.isEmpty(emailsifirla)) {
                 Toast.makeText(applicationContext, "E-Posta adresinizi Yazınız.", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener

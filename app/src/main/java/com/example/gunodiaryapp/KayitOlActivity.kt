@@ -25,12 +25,12 @@ class KayitOlActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_kayitol)
-        val myTextView = findViewById<TextView>(R.id.kayitolGunoyazi)//textyazımızı buluyor
+        val myTextView = findViewById<TextView>(R.id.PinGunoyazi)//textyazımızı buluyor
         val kullaniciadiYazi = findViewById<EditText>(R.id.kayitolAdSoyad)//kullanıcı textini buluyor
-        val epostaYazi = findViewById<EditText>(R.id.sifremiunuttumEposta)// girişdeki parola edittextini buluyoruz
-        val parolaYazi = findViewById<EditText>(R.id.kayitolParola)//girisdeki giriş butonunu buluyoruz
-        val parolaYaziOnay = findViewById<EditText>(R.id.kayitolParolaOnay)//girisdeki kayit ol butonunu buluyoruz
-        val kayitolbuton = findViewById<Button>(R.id.btnkayitolKaydet)
+        val epostaYazi = findViewById<EditText>(R.id.sifreDegisEposta)// girişdeki parola edittextini buluyoruz
+        val parolaYazi = findViewById<EditText>(R.id.Pin)//girisdeki giriş butonunu buluyoruz
+        val parolaYaziOnay = findViewById<EditText>(R.id.PİnTekrar)//girisdeki kayit ol butonunu buluyoruz
+        val kayitolbuton = findViewById<Button>(R.id.btnPinUygula)
         val myAnimation = AnimationUtils.loadAnimation(this, R.anim.sagdansola)//sağdan sola kaydırır
         //hepsi sağdan sola kaydırıyor
         myTextView.startAnimation(myAnimation)//animasyonu başlatır
