@@ -72,7 +72,7 @@ class YapayZeka : AppCompatActivity() {
         idTVQuestion.text = question
         etQuestion.setText("")
 
-        val apiKey="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"
+        val apiKey="api key"
         val url="https://api.openai.com/v1/engines/text-davinci-003/completions"
 
         val requestBody="""
