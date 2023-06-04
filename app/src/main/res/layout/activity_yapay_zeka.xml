@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#B56464"
+    android:background="#64696C"
     tools:context=".YapayZeka">
 
     <ScrollView
@@ -21,15 +21,23 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Yapay Zeka"
+                android:textAlignment="center"
+                android:textSize="35sp"
+                android:fontFamily="@font/yazi4"
+                android:textColor="#DA8080"
+                ></TextView>
             <!-- text view for displaying question-->
             <TextView
                 android:id="@+id/idTVQuestion"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="66dp"
                 android:layout_marginTop="30dp"
                 android:padding="4dp"
-                android:text="Question"
+                android:text="Soru"
                 android:textColor="@color/white"
                 android:textSize="17sp" />
 
@@ -40,7 +48,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="5dp"
                 android:padding="4dp"
-                android:text="Response"
+                android:text="Cevap"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
         </LinearLayout>
@@ -54,7 +62,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_margin="5dp"
-        android:hint="Enter your query"
+        android:hint="Sorunuzu Giriniz"
         android:padding="5dp"
         android:textColorHint="@color/white"
         app:hintTextColor="@color/white">
@@ -63,7 +71,7 @@
             android:id="@+id/etQuestion"
             android:layout_width="385dp"
             android:layout_height="67dp"
-            android:background="#F3A4A4"
+            android:background="#4A4545"
             android:drawableEnd="@drawable/send"
             android:drawableTint="@color/white"
             android:ems="10"
