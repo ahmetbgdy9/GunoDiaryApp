@@ -53,7 +53,7 @@ class YapayZeka : AppCompatActivity() {
         this.soru.text = soru
         etSoru.setText("")
 
-        val apiKey="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"
+        val apiKey="key"
         val url="https://api.openai.com/v1/engines/text-davinci-003/completions"
 
         val requestBody="""
