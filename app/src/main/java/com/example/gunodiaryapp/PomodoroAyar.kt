@@ -18,15 +18,12 @@ class PomodoroAyar : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pomodoroayar)
-
         uygulaButton = findViewById(R.id.button5)
         pomoSure = findViewById(R.id.pomoSure)
         kisaSure = findViewById(R.id.kisaSure)
         uzunSure = findViewById(R.id.uzunSure)
-
         uygulaButton.setOnClickListener(this)
     }
-
     override fun onClick(v: View) {
         when (v.id) {
             R.id.button5 -> {
@@ -36,7 +33,6 @@ class PomodoroAyar : AppCompatActivity(), View.OnClickListener {
                 editor.putString("kisaSure", kisaSure.text.toString())
                 editor.putString("uzunSure", uzunSure.text.toString())
                 editor.apply()
-
                 val intent = Intent(this, Pomodoro::class.java)
                 startActivity(intent)
                 finish()

@@ -26,10 +26,10 @@ class Not_Ekle : AppCompatActivity() {
         setContentView(binding.root)
 
         // Intent'ten alınan takvim nesnesinin alınması
-        val calendar = intent.getSerializableExtra(Takvim.CALENDAR_EXTRA) as Calendar
+        val calendar = intent.getSerializableExtra(Takvim.CALENDAR_EXTRA) as Calendar?
 
         // Toolbar altbaşlığına takvim nesnesinin tarihini ekliyoruz
-        binding.toolbar.subtitle = calendar.time.toSimpleDate()
+        binding.toolbar.subtitle = calendar?.time?.toSimpleDate()
 
         // Kaydet butonuna tıklandığında çalışacak kod bloğu
         binding.kaydetButon.setOnClickListener {

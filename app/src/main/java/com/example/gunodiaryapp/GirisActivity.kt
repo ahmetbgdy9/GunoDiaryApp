@@ -46,8 +46,6 @@ class GirisActivity : AppCompatActivity() {
             sharedPreferences.edit().putBoolean("remember_email", isChecked).apply()
         }
         val rememberEmail = sharedPreferences.getBoolean("remember_email", false)
-
-
         val currentUser = auth.currentUser
         if (rememberEmail) {
             if(currentUser!=null) {
@@ -58,8 +56,6 @@ class GirisActivity : AppCompatActivity() {
                 }
             }
         }
-
-
 
         //giriş yap butonuna tıklandığında
         //giriş bilgileri doğrulayıp giriş yap
@@ -83,22 +79,10 @@ class GirisActivity : AppCompatActivity() {
                     }
                 }
         }
-
         girisKayitOl.setOnClickListener {
             val intent = Intent(this, KayitOlActivity::class.java)
             startActivity(intent)
             finish()
         }
-      /*  girisSifremiUnuttum.setOnClickListener{
-            val intent = Intent(this, SifremiUnuttum::class.java)
-            startActivity(intent)
-            finish()
-        }*/
-        /*val butonGirisYap = findViewById<Button>(R.id.btngirisGirisYap)
-        butonGirisYap.setOnClickListener{
-            val intent = Intent(this, anaMenu::class.java)
-            startActivity(intent)
-
-        }*/
     }
 }

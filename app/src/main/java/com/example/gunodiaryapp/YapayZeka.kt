@@ -4,8 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.inputmethod.EditorInfo
-import android.widget.Button
-import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import com.google.android.material.textfield.TextInputEditText
@@ -17,45 +15,31 @@ import org.json.JSONObject
 import java.io.IOException
 
 class YapayZeka : AppCompatActivity() {
-    private val client = OkHttpClient()
-    // creating variables on below line.
-    lateinit var txtResponse: TextView
-    lateinit var idTVQuestion: TextView
-    lateinit var etQuestion: TextInputEditText
+
+    private val alici = OkHttpClient()
+    lateinit var txtCevap: TextView
+    lateinit var soru: TextView
+    lateinit var etSoru: TextInputEditText
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_yapay_zeka)
-        etQuestion=findViewById<TextInputEditText>(R.id.etQuestion)
-        //val btnSubmit=findViewById<Button>(R.id.btnSubmit)
-        idTVQuestion=findViewById<TextView>(R.id.idTVQuestion)
-        txtResponse=findViewById<TextView>(R.id.txtResponse)
+        etSoru=findViewById(R.id.etxtSoru)
+        soru=findViewById(R.id.idSoru)
+        txtCevap=findViewById(R.id.txtCevap)
 
-        /** btnSubmit.setOnClickListener {
-        val question=etQuestion.text.toString().trim()
-        Toast.makeText(this,question, Toast.LENGTH_SHORT).show()
-        if(question.isNotEmpty()){
-        getResponse(question) { response ->
-        runOnUiThread {
-        txtResponse.text = response
-        }
-        }
-        }
-        } */
-
-
-        etQuestion.setOnEditorActionListener(TextView.OnEditorActionListener { v, actionId, event ->
+        etSoru.setOnEditorActionListener(TextView.OnEditorActionListener { v, actionId, event ->
             if (actionId == EditorInfo.IME_ACTION_SEND) {
 
                 // setting response tv on below line.
-                txtResponse.text = "Please wait.."
+                txtCevap.text = "Lütfen Bekleyiniz.."
 
                 // validating text
-                val question = etQuestion.text.toString().trim()
-                Toast.makeText(this,question, Toast.LENGTH_SHORT).show()
-                if(question.isNotEmpty()){
-                    getResponse(question) { response ->
+                val soru = etSoru.text.toString().trim()
+                Toast.makeText(this,soru, Toast.LENGTH_SHORT).show()
+                if(soru.isNotEmpty()){
+                    cevapAl(soru) { cevap ->
                         runOnUiThread {
-                            txtResponse.text = response
+                            txtCevap.text = cevap
                         }
                     }
                 }
@@ -63,34 +47,31 @@ class YapayZeka : AppCompatActivity() {
             }
             false
         })
-
-
     }
-    fun getResponse(question: String, callback: (String) -> Unit){
+    fun cevapAl(soru: String, callback: (String) -> Unit){
 
-        // setting text on for question on below line.
-        idTVQuestion.text = question
-        etQuestion.setText("")
+        this.soru.text = soru
+        etSoru.setText("")
 
-        val apiKey="api key"
+        val apiKey="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"
         val url="https://api.openai.com/v1/engines/text-davinci-003/completions"
 
         val requestBody="""
             {
-            "prompt": "$question",
+            "prompt": "$soru",
             "max_tokens": 500,
             "temperature": 0
             }
         """.trimIndent()
 
-        val request = Request.Builder()
+        val talep = Request.Builder()
             .url(url)
             .addHeader("Content-Type", "application/json")
             .addHeader("Authorization", "Bearer $apiKey")
             .post(requestBody.toRequestBody("application/json".toMediaTypeOrNull()))
             .build()
 
-        client.newCall(request).enqueue(object : Callback {
+        alici.newCall(talep).enqueue(object : Callback {
             override fun onFailure(call: Call, e: IOException) {
                 Log.e("error","API failed",e)
             }

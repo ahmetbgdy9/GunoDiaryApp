@@ -32,7 +32,7 @@
                 ></TextView>
             <!-- text view for displaying question-->
             <TextView
-                android:id="@+id/idTVQuestion"
+                android:id="@+id/idSoru"
                 android:layout_width="match_parent"
                 android:layout_height="66dp"
                 android:layout_marginTop="30dp"
@@ -43,7 +43,7 @@
 
             <!-- text view for displaying response-->
             <TextView
-                android:id="@+id/txtResponse"
+                android:id="@+id/txtCevap"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="5dp"
@@ -68,7 +68,7 @@
         app:hintTextColor="@color/white">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etQuestion"
+            android:id="@+id/etxtSoru"
             android:layout_width="385dp"
             android:layout_height="67dp"
             android:background="#4A4545"

@@ -32,7 +32,9 @@ class Takvim : AppCompatActivity(), OnDayClickListener, OnSelectDateListener {
         setContentView(binding.root)
 
         // Ekle Butonuna click listener ekle, datePicker'ı açar
-        binding.ekleButon.setOnClickListener { tarihSecici() }
+        binding.ekleButon.setOnClickListener {
+            tarihSecici()
+        }
 
         // Takvimin herhangi bir gününe tıklandığında çağrılacak metodun listener'ı
         binding.takvimView.setOnDayClickListener(this)

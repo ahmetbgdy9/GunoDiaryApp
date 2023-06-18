@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/sifreDegisEposta"
+        android:id="@+id/unuttumEposta"
         android:layout_width="293dp"
         android:layout_height="63dp"
         android:layout_marginTop="152dp"
@@ -41,18 +41,18 @@
         app:layout_constraintTop_toBottomOf="@+id/sifremiUnuttumGuno" />
 
     <Button
-        android:id="@+id/btnPinUygula"
+        android:id="@+id/unuttumUygula"
         android:layout_width="168dp"
         android:layout_height="52dp"
         android:layout_marginTop="28dp"
         android:background="@drawable/bgbuton2"
         android:backgroundTint="@color/constraintgirisrenk"
-        android:text="Kayıt Ol"
-        android:textSize="15dp"
+        android:text="Uygula"
         android:textColor="@color/black"
+        android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sifreDegisEposta"
+        app:layout_constraintTop_toBottomOf="@+id/unuttumEposta"
         app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

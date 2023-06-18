@@ -6,7 +6,7 @@ import java.util.* // java.util paketindeki Locale sınıfını kullanabilmek i�
 // Date sınıfına yeni bir fonksiyon ekliyoruz.
 fun Date.toSimpleDate(): String {
     // SimpleDateFormat sınıfının "dd MMMM yyyy" formatındaki örneğini oluşturuyoruz.
-    val simpleDateFormat = SimpleDateFormat("dd MMMM yyyy", Locale.getDefault())
+    val tarihformati = SimpleDateFormat("dd MMMM yyyy", Locale.getDefault())
     // Verilen tarihi oluşturulan format ile biçimlendiriyoruz ve geri döndürüyoruz.
-    return simpleDateFormat.format(this)
+    return tarihformati.format(this)
 }
